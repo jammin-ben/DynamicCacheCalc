@@ -43,7 +43,7 @@ impl Simulator {
     fn init() -> Simulator {
         Simulator {
             size: 0,
-            tracker: HashMap::new(),
+            tracker: HashMap::new(), //Key: time - usize. Value: number of expiring tenancies at that time (relative to start of program)
             step: 0,
         }
     }
